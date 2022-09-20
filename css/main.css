@@ -1,0 +1,230 @@
+/* ==========================================================================
+   Your custom CSS styles
+   ========================================================================== */
+body{
+    background-image: url("../images/bg2.jpg");
+    background-size: cover;
+    background-position-x: center;
+}
+p1{
+    font-size:20px;
+}
+p2{
+    font-size:20px;
+}
+#vcontainer {
+    width:800px;
+    height:1000px;
+    border:1px solid #000;
+    margin: auto;
+    position:relative;
+}
+#stack {
+
+    background-color:white;
+    box-shadow:  -6px -6px #00f2ea, inset -6px -6px #ff0050;
+    height:110px;
+    width:720px;
+    margin: 100px 50px;
+    position:relative;
+}
+#over, #win{
+    text-align:center;
+    padding:50px;
+    font-family:"HanziPen SC";
+    font-weight:bold;
+}
+#over p, #win p{
+    font-size:35px;
+}
+#over .button, #win .button {
+    height:50px;
+    width:150px;
+    font-size:25px;
+    text-align:center;
+    font-family:"HanziPen SC";
+    font-style:none;
+    color:#000;
+    padding:5px 20px;
+    background-color: #EEEEEE;
+    border: 3px solid #222;
+    box-shadow: 2px 3px rgb(0 0 0 / 0.4);
+    border-radius: 10px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+#shuffle{
+    background-image:url("../images/refresh-icon.png");
+    background-size:60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:80px;
+    width:80px;
+}
+#tools{
+    position:absolute;
+    right: -100px;
+    top:100px;
+}
+#tools div{
+    background-color: #eee;
+    box-shadow: inset 6px 6px #00f2ea, 6px 6px #ff0050;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+#tools div:hover, #tools div:focus, #tools div:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: #fff;
+}
+#tools div:hover{
+    cursor:pointer;
+}
+.pg {
+    border: 1px solid #000;
+    height:700px;
+    width:700px;
+    margin: 50px 50px;
+    position:relative;
+}
+.card {
+    margin:4px;
+    outline: 3px solid #aaa;
+    height:93px;
+    width:93px;
+    border-radius: 10px;
+    box-shadow: 6px 9px rgb(0 0 0 / 0.4);
+}
+.clickable {
+    cursor: pointer;
+}
+.unselectedcard{
+    position:absolute;
+}
+.selectedcard{
+    position:relative;
+    float:left;
+    margin-top:3px;
+    margin-right:3px;
+}
+.shade{
+    background-color:#000;
+    opacity:70%;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+
+.clickable {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+.clickable:hover, .clickable:focus, .clickable:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+
+
+div[type="paul"] {
+    background-image: url("../images/paul.JPG");
+    background-size: 160%;
+    background-position: center;
+}
+div[type="61"] {
+    background-image: url("../images/61.png");
+    background-size: cover;
+}
+div[type="jiang"]  {
+    background-image: url("../images/jiang.JPG");
+    background-size: cover;
+}
+div[type="jiao"]  {
+    background-image: url("../images/jiao.JPG");
+    background-size: cover;
+}
+div[type="yz"]  {
+    background-image: url("../images/yz.JPG");
+    background-size: cover;
+}
+div[type="shili"]  {
+    background-image: url("../images/shili.JPG");
+    background-size: cover;
+}
+div[type="paopao"]  {
+    background-image: url("../images/paopao.JPG");
+    background-size: 200%;
+    background-position: center;
+}
+div[type="dan"]  {
+    background-image: url("../images/dan.JPG");
+    background-size: 280%;
+    background-position: center;
+}
+div[type="hong"]  {
+    background-image: url("../images/hong.JPG");
+    background-size: 120%;
+    background-position: center;
+}
+div[type="jagger"]  {
+    background-image: url("../images/jagger.PNG");
+    background-size: cover;
+}
+
+
+
+
+/* ==========================================================================
+   Your custom CSS styles for smartphones and screens smaller than 480 px
+   ========================================================================== */
+
+@media only screen and (max-width: 480px) {
+    /* insert styles here */
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/* Clearfix
+ * Adding a 'clearfix' class will allow parent elements to contain a floated child element
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
